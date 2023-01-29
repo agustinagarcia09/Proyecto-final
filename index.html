@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7a25f5e40c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>Agustina Garcia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU  -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agus</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#estudios" onclick="seleccionar()">Estudios</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="container">
+            <div class="bubbles">
+               <span style="--i:11"></span>
+               <span style="--i:12"></span>
+               <span style="--i:24"></span>
+               <span style="--i:10"></span>
+               <span style="--i:14"></span>
+               <span style="--i:23"></span>
+               <span style="--i:18"></span>
+               <span style="--i:16"></span>
+               <span style="--i:19"></span>
+               <span style="--i:20"></span>
+               <span style="--i:22"></span>
+               <span style="--i:25"></span>
+               <span style="--i:18"></span>
+               <span style="--i:21"></span>
+               <span style="--i:15"></span>
+               <span style="--i:13"></span>
+               <span style="--i:26"></span>
+               <span style="--i:17"></span>
+               <span style="--i:13"></span>
+               <span style="--i:28"></span>
+               <span style="--i:19"></span>
+               <span style="--i:11"></span>
+               <span style="--i:12"></span>
+               <span style="--i:24"></span>
+               <span style="--i:10"></span>
+               <span style="--i:14"></span>
+               <span style="--i:23"></span>
+               <span style="--i:18"></span>
+               <span style="--i:16"></span>
+               <span style="--i:19"></span>
+               <span style="--i:20"></span>
+               <span style="--i:22"></span>
+               <span style="--i:25"></span>
+               <span style="--i:18"></span>
+               <span style="--i:21"></span>
+               <span style="--i:15"></span>
+               <span style="--i:13"></span>
+               <span style="--i:26"></span>
+               <span style="--i:17"></span>
+               <span style="--i:13"></span>
+               <span style="--i:28"></span>
+               <span style="--i:19"></span>
+               <span style="--i:23"></span>
+               <span style="--i:18"></span>
+               <span style="--i:16"></span>
+               <span style="--i:19"></span>
+               <span style="--i:20"></span>
+               <span style="--i:22"></span>
+               <span style="--i:25"></span>
+               <span style="--i:18"></span>
+               <span style="--i:21"></span>
+               <span style="--i:15"></span>
+               <span style="--i:13"></span>
+               <span style="--i:26"></span>
+               <span style="--i:17"></span>
+               <span style="--i:13"></span>
+               <span style="--i:28"></span>
+               <span style="--i:19"></span>
+            </div>
+      
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Imagen/imagen-de-perfil.jpeg" alt="">
+            </div>
+            <h1>Agustina Garcia</h1>
+            <h2>Desarrollador web</h2>
+         </div>
+        </div> 
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Agustina Garcia.</span> Me puedo describir como una persona ágil, audaz, activa, responsable, cortés y fiable al realizar mis tareas de manera eficaz, puntual y entusiasta. En mí poca experiencia puedo decir que me adapto fácil a ambientes nuevos, me gusta cooperar en equipo. Soy constante en lo que hago y tengo buena presencia.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-11-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                           +54 9 3814957147
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            agusgarcia857@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Delfin Gallo 3190, Tucumán, Argentina
+                        </li>
+                        <li>
+                            <strong>Localidad</strong>
+                            San Miguel de Tucuman
+                        </li>
+                        <li>
+                            <strong>Codigo postal</strong>
+                            4000
+                        </li>
+                        <li>
+                            <strong>Estado civil</strong>
+                            Soltera
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Programador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">    
+                           <i class="fa-solid fa-gamepad" ></i>
+                           <span>JUEGOS</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-users"></i>
+                            <span>AMIGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>INSTAGRAM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-school"></i>
+                            <span>APRENDER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <button class="overlay" id="boton" onclick="mostrar();"> Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay "></span>
+                <div id="img"> <img src="Imagen/curriculum vitae CV trabajo.jpg" width="100%" alt="">  </div>
+                <button class="overlay" id="boton" onclick="ocultar();">Ocultar Imagen
+                 <span class="overlay"></span>
+                </button>
+            </button>
+
+    </div>
+
+           
+        
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- TECNICAS -->
+                <div class="col">
+                    <h3>Tecnicas</h3>
+                    <div class="skill">
+                        <span>Html & Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft word</span>
+                        <div class="barra-skill">
+                            <div class="progreso word">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso excel">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Powerpoint</span>
+                        <div class="barra-skill">
+                            <div class="progreso powerpoint">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HABILIDADES -->
+                <div class="col">
+                    <h3>Habilidades</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso  creatividad">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo de heramientas digitales</span>
+                        <div class="barra-skill">
+                            <div class="progreso digitales">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ESTUDIOS -->
+    <section id="estudios" class="estudios">
+        <div class="contenido-seccion">
+            <h2>Estudios</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Escuela Secundaria</h4>
+                        <span class="casa">Instituto privado San José de Calasanz</span>
+                        <span class="fecha">2013 - 2020</span>
+                        <p>Me gradue por Bachillerato en Economía y Administración, curso realizado sastifactoriamente</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Universidad</h4>
+                        <span class="casa">Universidad Nacional de Tucumán-FACET</span>
+                        <span class="fecha">2023</span>
+                        <p>Estoy cursando la carrera de "PROGRAMADOR UNIVERSITARIO"</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Cursos</h3>
+                    <div class="item der">
+                        <h4>EXCEL</h4>
+                        <span class="casa">Programa de innovación y tecnología de Ledesma</span>
+                        <span class="fecha">2022</span>
+                        <p>Realice el curso sastifactoriamente de excel online</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador</h4>
+                        <span class="casa">TICMAS</span>
+                        <span class="fecha">2023</span>
+                        <p>Cursando</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!--SECCION PORTAFOLIO--> 
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Imagen/vinilo.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de Musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagen/vinilo2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de Musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagen/viniloll.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de Musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagen/Vinilolll.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de Musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagen/musica (3).jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagen/394e7e50300a3381c224534b5e7fd841.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo de musica</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número de telefono">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="Imagen/ubicacion.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Delfin gallo 3199, Tucumán, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +54 9 3814957147 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: agusgarcia857@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        </div>
+    </footer>
+   
+    <script src="javascript.js"></script>
+</body>
+</html>
